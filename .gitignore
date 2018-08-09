@@ -1,0 +1,14 @@
+
+.DS_Store
+*.tfstate
+*.tfstate.backup
+*.tfstate.*.backup
+.terraform
+.secrets
+deployer
+!deployer/
+.config
+.vscode/**/*
+terraform.plan
+management/app-test
+images/**/variables.json
