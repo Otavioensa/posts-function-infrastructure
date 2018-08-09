@@ -7,3 +7,8 @@ variable "project" {
   type    = "string"
   default = "aws-lambda-function"
 }
+
+variable "bucketName" {
+  type    = "string"
+  default = "posts-versions"
+}
