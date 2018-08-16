@@ -12,3 +12,5 @@ deployer
 terraform.plan
 management/app-test
 images/**/variables.json
+.terraform
+*.tfstate.backup
