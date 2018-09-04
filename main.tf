@@ -1,6 +1,15 @@
 provider "aws" {
-  profile = "standard-aws-credentials"
+  profile = "credentials"
   region  = "us-east-1"
+}
+
+terraform {
+  backend "s3" {
+    bucket  = "posts-versions"
+    key     = "terraform/terraform.tfstate"
+    region  = "us-east-1"
+    profile = "credentials"
+  }
 }
 
 resource "aws_dynamodb_table" "dynamodb-terraform-state-lock" {
